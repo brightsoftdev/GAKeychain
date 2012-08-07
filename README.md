@@ -1,21 +1,24 @@
-# SSKeychain
+# GAKeychain
 
-SSKeychain is a simple wrapper for accessing accounts, getting passwords, setting passwords, and deleting passwords using the system Keychain on Mac OS X and iOS. SSKeychain works in ARC and non-ARC projects.
+GAKeychain is a evolution wrapper inspired by SSKeychain and adds a lot of new features, such as the functionality of the default account.
 
-This was originally inspired by EMKeychain and SDKeychain (both of which are now gone). Thanks to the authors. SSKeychain has since switched to a simpler implementation that was abstracted from [SSToolkit](http://sstoolk.it).
+GAKeychain is a simple wrapper for store data securely using the system Keychain on Mac OS X and iOS. GAKeychain works in ARC and non-ARC projects.
+
+Eu admiro o código escrito no SSKeychain e na sua inspiração original no código do EMKeychain and SDKeychain (both of which are now gone). Thanks to the authors.
+
 
 ## Adding to your project
 
 1. Add `Security.framework` to your target
 2. Add `SSKeychain.h` and `SSKeychain.m` to your project.
 
-You don't need to do anything regarding ARC. SSKeychain will detect if you're not using ARC and add the required memory management code.
+You don't need to do anything regarding ARC. GAKeychain will detect if you're not using ARC and add the required memory management code.
 
-Note: Currently SSKeychain does not support Mac OS 10.6.
+Note: Currently GAKeychain does not support Mac OS 10.6.
 
 ## Working with the keychain
 
-SSKeychain has the following class methods for working with the system keychain:
+GAKeychain has the following class methods for working with the system keychain:
 
 ```objective-c
 + (NSArray *)allAccounts;
@@ -25,7 +28,6 @@ SSKeychain has the following class methods for working with the system keychain:
 + (BOOL)setPassword:(NSString *)password forService:(NSString *)serviceName account:(NSString *)account;
 ```
 
-Easy as that. (See [SSKeychain.h](https://github.com/samsoffes/sskeychain/blob/master/SSKeychain.h) for all of the methods.)
 
 ## Documentation
 
