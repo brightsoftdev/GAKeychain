@@ -1,8 +1,8 @@
 # GAKeychain
 
-GAKeychain is a evolution wrapper inspired by SSKeychain and adds a lot of new features, such as the functionality of the default account.
-
 GAKeychain is a simple wrapper for store data securely using the system Keychain on Mac OS X and iOS. GAKeychain works in ARC and non-ARC projects.
+
+GAKeychain is a evolution wrapper inspired by SSKeychain and adds a lot of new features, such as the functionality of the default account.
 
 Eu admiro o código escrito no SSKeychain e na sua inspiração original no código do EMKeychain and SDKeychain (both of which are now gone). Thanks to the authors.
 
